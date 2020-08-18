@@ -1,14 +1,19 @@
 .popup__background {
-    //  display: none;
     top: 0;
     left: 0;
     position: absolute;
-    width: 100%;
-    min-height: 200vh;
+    width: 0;
+    min-height: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.show-bg {
+    width: 100%;
+    min-height: 200vh;
+}
+
 .popup {
+    display: none;
     z-index: 10;
     top: 40%;
     left: 30%;
@@ -17,6 +22,10 @@
     background-color: #F0F0F0;
     border-radius: 3px;
     padding: 16px
+}
+
+.show-popup {
+    display: block;
 }
 
 .popup__top {

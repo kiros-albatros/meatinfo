@@ -17,6 +17,12 @@
     }
 }
 
+.header__button {
+    @media (max-width: 800px) {
+        max-width: 250px;
+    }
+}
+
 .table__button {
     width: 60px;
     box-sizing: border-box;
@@ -30,6 +36,11 @@
     padding: 4px;
     margin-left: 15px;
     margin-right: 15px;
+
+    @media (max-width: 800px) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .sell_button {

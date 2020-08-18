@@ -1,13 +1,16 @@
 .company__header {
-    outline: 2px solid red;
     padding-bottom: 10px;
 }
 
 .company__breadcrumbs {
-    outline: 2px solid red;
     display: flex;
     justify-content: space-between;
     width: 385px;
+
+    @media (max-width: 500px) {
+        max-width: 320px;
+        flex-direction: column;
+    }
 }
 
 .breadcrumbs__item a {
@@ -33,6 +36,14 @@
     max-width: 940px;
     margin-top: 15px;
     position: relative;
+
+    @media (max-width: 800px) {
+        max-width: 700px;
+    }
+
+    @media (max-width: 500px) {
+        max-width: 300px;
+    }
 }
 
 .search__input {
@@ -45,6 +56,10 @@
     &:focus,
     &:active {
         outline: none;
+    }
+
+    @media (max-width: 800px) {
+        max-width: 700px;
     }
 }
 
@@ -114,6 +129,10 @@
 .company__options {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .company__social {
@@ -124,6 +143,10 @@
     color: #999999;
     width: 235px;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        margin-bottom: 20px;
+    }
 }
 
 .social__views,

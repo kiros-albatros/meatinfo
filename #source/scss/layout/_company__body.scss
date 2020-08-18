@@ -1,9 +1,16 @@
 .company__body {
     display: flex;
+
+    @media(max-width: 1200px) {
+        flex-wrap: wrap;
+    }
 }
 
 .company__advertisement {
-    outline: 2px solid violet;
+
+    @media(max-width: 800px) {
+        margin: auto;
+    }
 }
 
 .advertisement__table {
@@ -12,6 +19,22 @@
     color: $primary-color;
     border-collapse: collapse;
     margin-bottom: 40px;
+
+    @media(max-width: 800px) {
+        width: 650px;
+    }
+
+    @media(max-width: 750px) {
+        max-width: 550px;
+    }
+
+    @media(max-width: 600px) {
+        max-width: 400px;
+    }
+
+    @media(max-width: 500px) {
+        max-width: 350px;
+    }
 }
 
 .head__row {
@@ -28,6 +51,27 @@
     }
 }
 
+.th-view {
+    @media(max-width: 500px) {
+        display: none;
+    }
+}
+
+.th-publisher {
+    margin-left: 5px;
+}
+
+.table__buttons {
+    width: 50px;
+    box-sizing: border-box;
+    padding-right: 10px;
+
+    @media(max-width: 500px) {
+        width: 30px;
+        padding-right: 0px;
+    }
+}
+
 .table__view {
     width: 40px;
     height: 16px;
@@ -35,6 +79,10 @@
     background-repeat: no-repeat;
     background-position: right;
     display: inline-block;
+
+    @media(max-width: 500px) {
+        display: none;
+    }
 }
 
 .table__row {
@@ -48,6 +96,11 @@
         cursor: pointer;
         text-decoration: underline;
     }
+
+    @media(max-width: 800px) {
+        width: 160px;
+        padding-right: 10px;
+    }
 }
 
 .table__time {
@@ -60,11 +113,24 @@
     text-align: right;
     padding-right: 15px;
     color: #424242;
+
+    @media(max-width: 500px) {
+        display: none;
+    }
 }
 
-.table__publisher {
+.table__publisher,
+.th-publisher {
     display: flex;
     width: 230px;
+
+    @media (max-width: 800px) {
+        width: 180px;
+    }
+
+    @media (max-width: 500px) {
+        width: 150px;
+    }
 }
 
 .publisher__icon {

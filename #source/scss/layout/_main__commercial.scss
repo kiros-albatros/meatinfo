@@ -1,3 +1,9 @@
+.main__commercial {
+    @media(max-width: 1200px) {
+        display: none;
+    }
+}
+
 .commercial__item {
     width: 160px;
     min-height: 320px;

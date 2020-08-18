@@ -254,6 +254,23 @@ body {
   color: #212121;
 }
 
+main {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 0 5px;
+  }
+}
+
 .main__wrapper {
   display: flex;
   max-width: 1300px;
@@ -285,15 +302,20 @@ h2 {
 }
 
 .company__header {
-  outline: 2px solid red;
   padding-bottom: 10px;
 }
 
 .company__breadcrumbs {
-  outline: 2px solid red;
   display: flex;
   justify-content: space-between;
   width: 385px;
+}
+
+@media (max-width: 500px) {
+  .company__breadcrumbs {
+    max-width: 320px;
+    flex-direction: column;
+  }
 }
 
 .breadcrumbs__item a {
@@ -321,6 +343,18 @@ h2 {
   position: relative;
 }
 
+@media (max-width: 800px) {
+  .company__search {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .company__search {
+    max-width: 300px;
+  }
+}
+
 .search__input {
   border: 2px solid #005FAE;
   background: #FFFFFF;
@@ -331,6 +365,12 @@ h2 {
 
 .search__input:focus, .search__input:active {
   outline: none;
+}
+
+@media (max-width: 800px) {
+  .search__input {
+    max-width: 700px;
+  }
 }
 
 .search__input::-moz-placeholder {
@@ -413,6 +453,12 @@ h2 {
   justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+  .company__options {
+    flex-direction: column;
+  }
+}
+
 .company__social {
   display: flex;
   align-items: center;
@@ -421,6 +467,12 @@ h2 {
   color: #999999;
   width: 235px;
   justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .company__social {
+    margin-bottom: 20px;
+  }
 }
 
 .social__views,
@@ -460,8 +512,16 @@ h2 {
   display: flex;
 }
 
-.company__advertisement {
-  outline: 2px solid violet;
+@media (max-width: 1200px) {
+  .company__body {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .company__advertisement {
+    margin: auto;
+  }
 }
 
 .advertisement__table {
@@ -470,6 +530,30 @@ h2 {
   color: #005FAE;
   border-collapse: collapse;
   margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .advertisement__table {
+    width: 650px;
+  }
+}
+
+@media (max-width: 750px) {
+  .advertisement__table {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .advertisement__table {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .advertisement__table {
+    max-width: 350px;
+  }
 }
 
 .head__row {
@@ -486,6 +570,29 @@ h2 {
   padding: 8px 0;
 }
 
+@media (max-width: 500px) {
+  .th-view {
+    display: none;
+  }
+}
+
+.th-publisher {
+  margin-left: 5px;
+}
+
+.table__buttons {
+  width: 50px;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .table__buttons {
+    width: 30px;
+    padding-right: 0px;
+  }
+}
+
 .table__view {
   width: 40px;
   height: 16px;
@@ -493,6 +600,12 @@ h2 {
   background-repeat: no-repeat;
   background-position: right;
   display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .table__view {
+    display: none;
+  }
 }
 
 .table__row {
@@ -508,6 +621,13 @@ h2 {
   text-decoration: underline;
 }
 
+@media (max-width: 800px) {
+  .table__good {
+    width: 160px;
+    padding-right: 10px;
+  }
+}
+
 .table__time {
   width: 56px;
   color: #424242;
@@ -520,9 +640,30 @@ h2 {
   color: #424242;
 }
 
-.table__publisher {
+@media (max-width: 500px) {
+  .table__views {
+    display: none;
+  }
+}
+
+.table__publisher,
+.th-publisher {
   display: flex;
   width: 230px;
+}
+
+@media (max-width: 800px) {
+  .table__publisher,
+  .th-publisher {
+    width: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .table__publisher,
+  .th-publisher {
+    width: 150px;
+  }
 }
 
 .publisher__icon {
@@ -550,6 +691,13 @@ h2 {
   max-width: 360px;
   margin-left: 20px;
   padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .company__info {
+    max-width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .company__text {
@@ -582,6 +730,12 @@ h2 {
   margin-right: 10px;
   margin-bottom: 10px;
   height: 120px;
+}
+
+@media (max-width: 1200px) {
+  .main__commercial {
+    display: none;
+  }
 }
 
 .commercial__item {
@@ -623,6 +777,20 @@ h2 {
   background-color: #F0F0F0;
   border-radius: 3px;
   padding: 16px;
+}
+
+@media (max-width: 1200px) {
+  .popup {
+    width: 450px;
+    left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup {
+    width: 310px;
+    left: 4px;
+  }
 }
 
 .show-popup {
@@ -738,6 +906,12 @@ h2 {
   background-color: #00C346;
 }
 
+@media (max-width: 800px) {
+  .header__button {
+    max-width: 250px;
+  }
+}
+
 .table__button {
   width: 60px;
   box-sizing: border-box;
@@ -751,6 +925,13 @@ h2 {
   padding: 4px;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media (max-width: 800px) {
+  .table__button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 .sell_button {

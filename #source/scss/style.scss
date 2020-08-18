@@ -6,7 +6,17 @@
 @import "abstract/_constants.scss";
 @import "abstract/_mixins.scss";
 
+//Base 
+@import "base/_basic.scss";
+
 //Layout
+@import "layout/_header.scss";
+@import "layout/_company__header.scss";
+@import "layout/_company__body.scss";
+@import "layout/_company__info.scss";
+@import "layout/_company__products.scss";
+@import "layout/_main__commercial.scss";
+@import "layout/_popup.scss";
 
 //Components
 @import "components/_buttons.scss";

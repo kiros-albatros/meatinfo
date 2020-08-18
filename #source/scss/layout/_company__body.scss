@@ -1,0 +1,89 @@
+.company__body {
+    display: flex;
+}
+
+.company__advertisement {
+    outline: 2px solid violet;
+}
+
+.advertisement__table {
+    width: 740px;
+    font-size: 1.2rem;
+    color: $primary-color;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.head__row {
+    background: #F0F0F0;
+    border-radius: 3px;
+
+    th {
+        text-align: left;
+        color: #424242;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: normal;
+        padding: 8px 0;
+    }
+}
+
+.table__view {
+    width: 40px;
+    height: 16px;
+    background-image: url(../../img/ic_view.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: inline-block;
+}
+
+.table__row {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table__good {
+    width: 305px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.table__time {
+    width: 56px;
+    color: #424242;
+}
+
+.table__views {
+    width: 40px;
+    text-align: right;
+    padding-right: 15px;
+    color: #424242;
+}
+
+.table__publisher {
+    display: flex;
+    width: 230px;
+}
+
+.publisher__icon {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 30px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/photo.png);
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.ocean__icon {
+    background-image: url(../img/ocean.png);
+}
+
+.publisher__job {
+    color: #999999;
+}

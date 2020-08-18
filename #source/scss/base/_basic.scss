@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: "Roboto-Regular", sans-serif;
+    color: #212121;
+}
+
+.main__wrapper {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.main__company {
+    margin-right: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E0E0E0;
+}

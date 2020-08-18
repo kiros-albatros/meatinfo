@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
   <head>
     <meta charset="UTF-8" />
@@ -27,15 +27,15 @@
               <li class="breadcrumbs__item">
                 <a href="">Мясные компании в Москве /</a>
               </li>
-              <li class="breadcrumbs__item">
+              <li class="breadcrumbs__item breadcrumb_active">
                 <a href="">Преображенский МПК, ООО</a>
               </li>
             </ul>
             <div class="company__search">
               <input class="search__input" type="search" name="search" id="" placeholder="Поиск по компаниям">
-              <span class="search__icon"></span>
+              <button type="submit" class="search__button"></button>
             </div>
-            <a class="company__catalog_link">К каталогу компаний</a>
+            <a class="company__catalog-link">К каталогу компаний</a>
             <h1 class="company__title">Преображенский МПК, ООО</h1>
             <div class="company__options">
               <p class="company__social">
@@ -52,9 +52,9 @@
 
           <section class="company__body">
             <div class="company__advertisement">
-              <h2 class="advertisement__title">Последние объявления сотрудников компании</h2>
+              <h2>Последние объявления сотрудников компании</h2>
               <table class="advertisement__table">
-                <tr>
+                <tr class="head__row">
                   <th></th>
                   <th>Объявление</th>
                   <th>Время</th>
@@ -62,120 +62,144 @@
                   <th>Опубликовал</th>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button sell_button">Продам</button></td>
                   <td class="table__good">Желудки куриные очищенные 60 руб.</td>
                   <td class="table__time">5 фев</td>
                   <td class="table__views">155</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Татьяна Лобач</span>
-                    <span class="publisher__job">Орехово-Зуевский мясокомб...</span>
+                    <p class="publisher__job">Орехово-Зуевский мясокомб...</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button sell_button">Продам</button></td>
                   <td class="table__good">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</td>
                   <td class="table__time">27 янв</td>
                   <td class="table__views">185</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Татьяна Лобач</span>
-                    <span class="publisher__job">Орехово-Зуевский мясокомб...</span>
+                    <p class="publisher__job">Орехово-Зуевский мясокомб...</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button buy_button">Куплю</button></td>
                   <td class="table__good">Курица, Индейка, Говядина, Свинина от МК</td>
                   <td class="table__time">21 апр</td>
                   <td class="table__views">42609</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Татьяна Лобач</span>
-                    <span class="publisher__job">Орехово-Зуевский мясокомб...</span>
+                    <p class="publisher__job">Орехово-Зуевский мясокомб...</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button buy_button">Куплю</button></td>
                   <td class="table__good">ГоленьЦБ(подл) 100р, Желудки кур.очиш 60 р</td>
                   <td class="table__time">27 фев</td>
                   <td class="table__views">319</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Татьяна Лобач</span>
-                    <span class="publisher__job">Орехово-Зуевский мясокомб...</span>
+                    <p class="publisher__job">Орехово-Зуевский мясокомб...</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button sell_button">Продам</button></td>
                   <td class="table__good">Курица, Индейка, Говядина, Свинина от МК</td>
                   <td class="table__time">7 фев</td>
                   <td class="table__views">10072</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Татьяна Лобач</span>
-                    <span class="publisher__job">Орехово-Зуевский мясокомб...</span>
+                    <p class="publisher__job">Орехово-Зуевский мясокомб...</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button sell_button">Продам</button></td>
                   <td class="table__good">Фарш куриный ММО люкс 40руб/кг</td>
                   <td class="table__time">7 фев</td>
                   <td class="table__views">300</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon ocean__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Виталий Пчелинцев</span>
-                    <span class="publisher__job">ООО ОКЕАНФИШ</span>
+                    <p class="publisher__job">ООО ОКЕАНФИШ</p>
+                  </span>
                   </td>
                 </tr>
 
-                <tr>
+                <tr class="table__row">
                   <td class="table__buttons"><button class="table__button sell_button">Продам</button></td>
                   <td class="table__good">Голень ЦБ ГОСТ 75 руб/кг</td>
                   <td class="table__time">7 фев</td>
                   <td class="table__views">319</td>
-                  <td class="table__publisher"><span class="publisher__icon"></span>
+                  <td class="table__publisher">
+                    <span class="publisher__icon ocean__icon"></span>
+                    <span class="publisher__info">
                     <span class="publisher__name">Виталий Пчелинцев</span>
-                    <span class="publisher__job">ООО ОКЕАНФИШ</span>
+                    <p class="publisher__job">ООО ОКЕАНФИШ</p>
+                  </span>
                   </td>
                 </tr>
 
               </table>
+
+              <div class="company__products">
+                <h2>Фото продукции</h2>
+                <div class="products__wrapper">
+                <div class="product__item">
+                  <img class="product__photo" src="img/product1.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product2.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product1.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product4.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product3.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product2.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product2.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product1.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product4.jpg" alt="">
+                </div>
+                <div class="product__item">
+                  <img class="product__photo" src="img/product3.jpg" alt="">
+                </div>
+              </div>
+            </div>
             </div>
 
-            <div class="company__products">
-              <div class="product__item">
-                <img class="product__photo" src="img/product1.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product2.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product1.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product4.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product3.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product2.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product2.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product1.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product3.jpg" alt="">
-              </div>
-              <div class="product__item">
-                <img class="product__photo" src="img/product4.jpg" alt="">
-              </div>
-            </div>
-
-            <div class="conpany__info">
+            <div class="company__info">
               <a class="company__logo">
                 <img src="img/logo.svg" alt="Логотип">
               </a>
@@ -212,7 +236,7 @@
                     безопасность и высокое качество продукции.</span>
                 </p>
                 <p class="company__line">
-                  <span class="line__title">Виды деятольности:</span>
+                  <span class="line__title">Виды деятeльности:</span>
                   <ul class="line__list">
                     <li class="list__item">– Оборудование, упаковка</li>
                     <li class="list__item">– Оптовая торговля</li>
@@ -237,11 +261,8 @@
                 </p>
               </div>
             </div>
-
           </section>
-
         </section>
-
 
         <section class="main__commercial">
           <div class="commercial__item">
@@ -254,6 +275,38 @@
       </div>
     </main>
 
+<div class="popup__background"></div>
+    <section class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__top">
+          <p class="popup__icon">
+            <img src="img/photo.png" alt="" width="30">
+          </p>
+         <div> 
+           <span>Гость</span><br>
+          <p class="mark-stars-wrapper">
+            <span class="stars">
+              <span class="stars__item"></span>
+              <span class="stars__item"></span>
+              <span class="stars__item"></span>
+              <span class="stars__item"></span>
+              <span class="stars__item"></span>
+          </span>
+            <span class="mark">Начните отзыв с выставления оценки</span>
+          </p>
+        </div>
+        </div>
+        <div class="popup__content">
+          <textarea class="popup__textarea" name="comment" id="" cols="30" rows="10" placeholder="Сотрудничали с компанией? Расскажите как это было!" required></textarea>
+          <div class="popup__bottom">
+           <label for="photo-upload"><input type="file" class="photo-add" id="photo-upload" value=""/></label> 
+            <button class="button popup__button">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a class="popup__link" href=""></a> Правила публикации отзывов</a>
     <script src="js/script.min.js"></script>
   </body>
 

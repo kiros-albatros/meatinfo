@@ -35,6 +35,10 @@
     @media(max-width: 500px) {
         max-width: 350px;
     }
+
+    @media(max-width: 370px) {
+        max-width: 300px;
+    }
 }
 
 .head__row {
@@ -48,6 +52,10 @@
         line-height: 1.6rem;
         font-weight: normal;
         padding: 8px 0;
+    }
+
+    @media (max-width: 370px) {
+        display: none;
     }
 }
 
@@ -152,4 +160,21 @@
 
 .publisher__job {
     color: #999999;
+}
+
+.table__row {
+    @media (max-width: 370px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        td {
+            width: 300px;
+        }
+
+        .table__buttons {
+            order: 5;
+        }
+    }
+
 }

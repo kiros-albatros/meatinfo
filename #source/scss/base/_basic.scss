@@ -39,4 +39,10 @@ h2 {
     line-height: 2.8rem;
     padding-bottom: 8px;
     border-bottom: 1px solid #E0E0E0;
+
+    @media (max-width: 370px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
 }
